@@ -1,0 +1,32 @@
+go build -o bin/chapter10 cmd/chapter10/main.go
+ 
+go build -o bin/chapter11-reflection cmd/chapter11-reflection/main.go
+ 
+go build -o bin/chapter11-refraction cmd/chapter11-refraction/main.go
+ 
+go build -o bin/chapter12 cmd/chapter12/main.go
+ 
+go build -o bin/chapter13 cmd/chapter13/main.go
+ 
+go build -o bin/chapter2 cmd/chapter2/main.go
+ 
+go build -o bin/chapter4 cmd/chapter4/main.go
+ 
+go build -o bin/chapter5 cmd/chapter5/main.go
+ 
+go build -o bin/chapter6 cmd/chapter6/main.go
+ 
+go build -o bin/chapter7 cmd/chapter7/main.go
+ 
+go build -o bin/chapter8 cmd/chapter8/main.go
+ 
+go build -o bin/chapter8-animation cmd/chapter8-animation/main.go
+ 
+go build -o bin/chapter8-multilight cmd/chapter8-multilight/main.go
+ 
+go build -o bin/chapter9 cmd/chapter9/main.go
+ 
+go build -o bin/ui cmd/ui/main.go
+ 
+make: Leaving directory '/home/brice/Code/github.com/bricef/ray-tracer'
+ 

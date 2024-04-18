@@ -1,0 +1,951 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Jun 13 20:26:35 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+CHROME_EXECUTABLE = /usr/bin/chromium
+# environment
+CSF_EXCEPTION_PROMPT = 1
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-8038c6cc-4b66-4dd4-b440-bd47cbe8e792.sock
+# environment
+CSF_XmlOcafResource = /usr/share/opencascade/resources/XmlOcafResource
+# environment
+LC_NAME = en_GB.UTF-8
+# environment
+LC_NUMERIC = en_GB.UTF-8
+# environment
+VSCODE_CWD = /home/brice
+# environment
+DIRSTACK_LASTDIR = /
+# environment
+MMGT_CLEAR = 1
+# environment
+CSF_XCAFDefaults = /usr/share/opencascade/resources/StdResource
+# environment
+CSF_PluginDefaults = /usr/share/opencascade/resources/StdResource
+# environment
+CASROOT = /usr
+# environment
+NVM_DIR = /home/brice/.nvm
+# environment
+LC_ADDRESS = en_GB.UTF-8
+# environment
+GDM_LANG = en_GB.utf8
+# default
+MAKE_COMMAND := make
+# environment
+GTK3_MODULES = xapp-gtk3-module:xapp-gtk3-module
+# environment
+GOPATH = /home/brice/go
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/98/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/brice/Code/github.com/bricef/ray-tracer
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+MAIL = /var/spool/mail/brice
+# environment
+XDG_DATA_DIRS = /home/brice/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+NVM_INC = /home/brice/.nvm/versions/node/v16.13.1/include/node
+# environment
+VSCODE_CODE_CACHE_PATH = /home/brice/.config/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# environment
+CSF_ShadersDirectory = /usr/share/opencascade/resources/Shaders
+# environment
+LANG = C
+# environment
+XAUTHORITY = /home/brice/.Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ANSIBLE_HOSTS = /home/brice/.ansible_hosts
+# makefile
+CURDIR := /home/brice/Code/github.com/bricef/ray-tracer
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+PROMPT_COMMAND = _direnv_hook;__prompt_command; dirstack_prompt_command
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXEFdVBA/agent.3197
+# default
+.SHELLFLAGS := -c
+# environment
+CSF_MDTVTexturesDirectory = /usr/share/opencascade/resources/Textures
+# environment
+NVM_BIN = /home/brice/.nvm/versions/node/v16.13.1/bin
+# environment
+HISTSIZE = 3000
+# environment
+XDG_CONFIG_DIRS = /etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = xfce
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 3670
+# environment
+HISTIGNORE = ls:ll:l:la:lla:pwd:..:cd..:cd ..:git s
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+CUDA_PATH = /opt/cuda
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+CSF_XSMessage = /usr/share/opencascade/resources/XSMessage
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+DRAWDEFAULT = /usr/share/opencascade/resources/DrawResources/DrawDefault
+# environment
+SESSION_MANAGER = local/brice-linux-desktop:@/tmp/.ICE-unix/3148,unix/brice-linux-desktop:/tmp/.ICE-unix/3148
+# automatic
+*F = $(notdir $*)
+# environment
+QT_QPA_PLATFORMTHEME = qt5ct
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+CSF_SHMessage = /usr/share/opencascade/resources/SHMessage
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# environment
+HISTFILESIZE = 3000
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+DOTNET_BUNDLE_EXTRACT_BASE_DIR = /home/brice/.cache/dotnet_bundle_extract
+# environment
+SHLVL = 1
+# environment
+CSF_TObjDefaults = /usr/share/opencascade/resources/StdResource
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+SNAP_COOKIE = W5HPKyRYaIrXdn4vBLTDFtWhFIS0tMTMNLr_OaDyUZx9poU6mIi-
+# environment
+PATH = /home/brice/.nvm/versions/node/v16.13.1/bin:/home/brice/.local/bin:/home/brice/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/home/brice/.dotnet/tools:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/usr/lib/jvm/default/bin:/home/brice/bin:/home/brice/go/bin:/home/brice/.local/bin:/home/brice/.local/share/gem/ruby/3.0.0/bin:/home/brice/.pulumi/bin:/home/brice/.fly/bin:/opt/cuda/bin:/home/brice/.linkerd2/bin
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = en_GB.UTF-8
+# environment
+LC_MONETARY = en_GB.UTF-8
+# environment
+CSF_OCCTResourcePath = /usr/share/opencascade/resources
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/brice/snap/code/common
+# environment
+LC_TIME = en_GB.UTF-8
+# environment
+SNAP = /snap/code/98
+# environment
+SNAP_REVISION = 98
+# environment
+SNAP_REAL_HOME = /home/brice
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+CSF_StandardLiteDefaults = /usr/share/opencascade/resources/StdResource
+# environment
+CSF_STEPDefaults = /usr/share/opencascade/resources/XSTEPResource
+# environment
+LC_TELEPHONE = en_GB.UTF-8
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_SEAT = seat0
+# makefile (from 'Makefile', line 5)
+BINARY_DIRS = $(sort $(subst cmd,bin,$(wildcard ./cmd/*)))
+# environment
+XDG_CURRENT_DESKTOP = XFCE
+# environment
+CSF_MIGRATION_TYPES = /usr/share/opencascade/resources/StdResource/MigrationSheet.txt
+# environment
+LS_COLORS = di=35
+# automatic
++F = $(notdir $+)
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+DESKTOP_SESSION = xfce
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = XFCE
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = brice
+# environment
+CSF_LANGUAGE = us
+# environment
+SNAP_ARCH = amd64
+# environment
+XDG_VTNR = 7
+# makefile
+.DEFAULT_GOAL := all
+# environment
+CSF_TObjMessage = /usr/share/opencascade/resources/TObj
+# environment
+HISTCONTROL = erasedups
+# environment
+EDITOR = vim
+# environment
+DISPLAY = :0.0
+# environment
+GTK_MODULES = canberra-gtk-module:canberra-gtk-module
+# environment
+USER = brice
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/98
+# environment
+SNAP_CONTEXT = W5HPKyRYaIrXdn4vBLTDFtWhFIS0tMTMNLr_OaDyUZx9poU6mIi-
+# environment
+LC_MEASUREMENT = en_GB.UTF-8
+# environment
+PSTYLE = fancy
+# environment
+SSH_AGENT_PID = 3198
+# environment
+_ = /usr/bin/make
+# environment
+LC_PAPER = en_GB.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+ 
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/brice/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+LC_CTYPE = en_GB.UTF-8
+# environment
+CSF_DrawPluginDefaults = /usr/share/opencascade/resources/DrawResources
+# environment
+CSF_IGESDefaults = /usr/share/opencascade/resources/XSTEPResource
+# environment
+NVM_CD_FLAGS = 
+# environment
+GOMODCACHE = /home/brice/go/pkg/mod
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+GTK2_RC_FILES = /home/brice/.gtkrc-2.0
+# environment
+HOME = /home/brice
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+DRAWHOME = /usr/share/opencascade/resources/DrawResources
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-2da70b68-1.68.0-main.sock
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/98/usr/share/glib-2.0/schemas
+# environment
+XDG_SESSION_ID = 2
+# environment
+PANEL_GDK_CORE_DEVICE_EVENTS = 0
+# environment
+GOPROXY = https://proxy.golang.org,direct
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = 4af164ea
+# default
+SUFFIXES := 
+# environment
+QT_AUTO_SCREEN_SCALE_FACTOR = 0
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/brice
+# environment
+CSF_StandardDefaults = /usr/share/opencascade/resources/StdResource
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+FLYCTL_INSTALL = /home/brice/.fly
+# makefile (from 'Makefile', line 6)
+SOURCES = $(shell find pkg -type f -name '*.go')
+# environment
+SNAP_USER_DATA = /home/brice/snap/code/98
+# environment
+XDG_MENU_PREFIX = xfce-
+# environment
+DOTNET_ROOT = /usr/share/dotnet
+# environment
+GDMSESSION = xfce
+# environment
+LC_IDENTIFICATION = en_GB.UTF-8
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+# Load=174/1024=17%, Rehash=0, Collisions=14/212=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# pkg/color (device 65024, inode 56755093): 3 files, no impossibilities so far.
+# pkg/scene (device 65024, inode 56755133): 4 files, no impossibilities.
+# pkg/utils (device 65024, inode 56755139): 2 files, no impossibilities so far.
+# pkg/canvas (device 65024, inode 56755090): 4 files, no impossibilities.
+# pkg/core (device 65024, inode 56755098): 2 files, no impossibilities so far.
+# pkg/materials (device 65024, inode 58458369): 1 files, no impossibilities so far.
+ 
+# pkg/math (device 65024, inode 56755112): 10 files, no impossibilities.
+# ./cmd (device 65024, inode 56755044): 17 files, no impossibilities.
+# pkg/physics (device 65024, inode 56755126): 2 files, no impossibilities so far.
+# pkg/lighting (device 65024, inode 56755105): 5 files, no impossibilities.
+# pkg/component (device 65024, inode 56755096): 3 files, no impossibilities.
+# cmd/chapter10 (device 65024, inode 56755045): 2 files, no impossibilities so far.
+# . (device 65024, inode 56754997): 15 files, no impossibilities.
+# pkg/meshes (device 65024, inode 56755121): 10 files, no impossibilities so far.
+# pkg/shaders (device 65024, inode 56755136): 4 files, no impossibilities.
+# pkg/ray (device 65024, inode 56755128): 7 files, no impossibilities.
+# pkg/entities (device 65024, inode 56755100): 5 files, no impossibilities.
+# pkg/camera (device 65024, inode 56755086): 4 files, no impossibilities so far.
+# pkg/material (device 65024, inode 56755109): 4 files, no impossibilities.
+# bin: could not be stat'd.
+# pkg/entity (device 65024, inode 56755102): 3 files, no impossibilities so far.
+
+# 107 files, no impossibilities in 21 directories.
+
+# Implicit Rules
+
+bin/%: cmd/%/main.go pkg/materials/helpers.go pkg/utils/utils.go pkg/camera/camera_test.go pkg/camera/camera.go pkg/camera/deprecated_camera.go pkg/color/color_test.go pkg/color/color.go pkg/core/types.go pkg/meshes/plane.go pkg/meshes/cube.go pkg/meshes/cylinder_test.go pkg/meshes/cylinder.go pkg/meshes/sphere_test.go pkg/meshes/plane_test.go pkg/meshes/cube_test.go pkg/meshes/sphere.go pkg/physics/kinematics.go pkg/entity/entity_test.go pkg/entity/entity.go pkg/material/material_test.go pkg/material/material.go pkg/lighting/pointlight.go pkg/lighting/lighting.go pkg/lighting/lighting_test.go pkg/scene/scene.go pkg/scene/scene_test.go pkg/shaders/shaders_test.go pkg/shaders/shaders.go pkg/entities/helpers.go pkg/entities/group.go pkg/entities/group_test.go pkg/ray/intersections.go pkg/ray/intersection_test.go pkg/ray/ray_test.go pkg/ray/intersection.go pkg/ray/ray.go pkg/canvas/canvas.go pkg/canvas/canvas_test.go pkg/component/component.go pkg/math/quaternion.go pkg/math/viewtransform_test.go pkg/math/types.go pkg/math/quaternion_test.go pkg/math/transform.go pkg/math/matrix.go pkg/math/transform_test.go pkg/math/matrix_test.go
+#  recipe to execute (from 'Makefile', line 11):
+	go build -o $@ $<
+
+ 
+output/%.png: bin/%
+#  recipe to execute (from 'Makefile', line 21):
+	$<
+
+# 2 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+pkg/math/viewtransform_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/chapter12:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pkg/entities/group.go:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-06-13 19:17:25.095279144
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/ray/intersection.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-10-30 12:32:23.494001764
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/ray/intersections.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-10-30 12:33:35.313924165
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/meshes/cube_test.go:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-01-30 13:15:58.93279311
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/meshes/cylinder.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-06 15:29:23.086677714
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/shaders/shaders.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/component/component.go:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/ray/intersection_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-02 15:34:42.57537643
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-13 20:25:00.247540412
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/camera/deprecated_camera.go:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/math/quaternion.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/meshes/sphere_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/lighting/pointlight.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-07 13:02:13.810214335
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/scene/scene.go:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-13 19:33:41.714298498
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/physics/kinematics.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/entities/helpers.go:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-13 19:44:00.010273281
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 14):
+	rm -rf bin
+
+# Not a target:
+pkg/ray/ray_test.go:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2021-09-02 15:29:50.353101023
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/meshes/sphere.go:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-13 19:03:25.746132976
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/meshes/plane.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/chapter8-animation:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pkg/meshes/cylinder_test.go:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-06-13 20:25:20.857488778
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/materials/helpers.go:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-13 19:37:28.520713778
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/color/color_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/math/matrix.go:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/chapter7:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pkg/camera/camera_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/math/transform.go:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/chapter5:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/chapter8:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/chapter4:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pkg/math/types.go:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/color/color.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/camera/camera.go:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-13 08:22:25.616525265
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pkg/meshes/plane_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/math/transform_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+all: bin/chapter10 bin/chapter11-reflection bin/chapter11-refraction bin/chapter12 bin/chapter13 bin/chapter2 bin/chapter4 bin/chapter5 bin/chapter6 bin/chapter7 bin/chapter8 bin/chapter8-animation bin/chapter8-multilight bin/chapter9 bin/ui
+ 
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+run:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+pkg/entities/group_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-13 19:17:21.048615823
+#  File has been updated.
+#  Successfully updated.
+
+ 
+# Not a target:
+pkg/canvas/canvas_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+build:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+pkg/math/quaternion_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+ 
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 17):
+	go clean -testcache
+	go test ./...
+
+bin/chapter10: cmd/chapter10/main.go pkg/materials/helpers.go pkg/utils/utils.go pkg/camera/camera_test.go pkg/camera/camera.go pkg/camera/deprecated_camera.go pkg/color/color_test.go pkg/color/color.go pkg/core/types.go pkg/meshes/plane.go pkg/meshes/cube.go pkg/meshes/cylinder_test.go pkg/meshes/cylinder.go pkg/meshes/sphere_test.go pkg/meshes/plane_test.go pkg/meshes/cube_test.go pkg/meshes/sphere.go pkg/physics/kinematics.go pkg/entity/entity_test.go pkg/entity/entity.go pkg/material/material_test.go pkg/material/material.go pkg/lighting/pointlight.go pkg/lighting/lighting.go pkg/lighting/lighting_test.go pkg/scene/scene.go pkg/scene/scene_test.go pkg/shaders/shaders_test.go pkg/shaders/shaders.go pkg/entities/helpers.go pkg/entities/group.go pkg/entities/group_test.go pkg/ray/intersections.go pkg/ray/intersection_test.go pkg/ray/ray_test.go pkg/ray/intersection.go pkg/ray/ray.go pkg/canvas/canvas.go pkg/canvas/canvas_test.go pkg/component/component.go pkg/math/quaternion.go pkg/math/viewtransform_test.go pkg/math/types.go pkg/math/quaternion_test.go pkg/math/transform.go pkg/math/matrix.go pkg/math/transform_test.go pkg/math/matrix_test.go
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'chapter10'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := bin/chapter10
+# automatic
+# * := chapter10
+# automatic
+# < := cmd/chapter10/main.go
+# automatic
+ 
+# + := cmd/chapter10/main.go pkg/materials/helpers.go pkg/utils/utils.go pkg/camera/camera_test.go pkg/camera/camera.go pkg/camera/deprecated_camera.go pkg/color/color_test.go pkg/color/color.go pkg/core/types.go pkg/meshes/plane.go pkg/meshes/cube.go pkg/meshes/cylinder_test.go pkg/meshes/cylinder.go pkg/meshes/sphere_test.go pkg/meshes/plane_test.go pkg/meshes/cube_test.go pkg/meshes/sphere.go pkg/physics/kinematics.go pkg/entity/entity_test.go pkg/entity/entity.go pkg/material/material_test.go pkg/material/material.go pkg/lighting/pointlight.go pkg/lighting/lighting.go pkg/lighting/lighting_test.go pkg/scene/scene.go pkg/scene/scene_test.go pkg/shaders/shaders_test.go pkg/shaders/shaders.go pkg/entities/helpers.go pkg/entities/group.go pkg/entities/group_test.go pkg/ray/intersections.go pkg/ray/intersection_test.go pkg/ray/ray_test.go pkg/ray/intersection.go pkg/ray/ray.go pkg/canvas/canvas.go pkg/canvas/canvas_test.go pkg/component/component.go pkg/math/quaternion.go pkg/math/viewtransform_test.go pkg/math/types.go pkg/math/quaternion_test.go pkg/math/transform.go pkg/math/matrix.go pkg/math/transform_test.go pkg/math/matrix_test.go
+# automatic
+# % := 
+# automatic
+# ^ := cmd/chapter10/main.go pkg/materials/helpers.go pkg/utils/utils.go pkg/camera/camera_test.go pkg/camera/camera.go pkg/camera/deprecated_camera.go pkg/color/color_test.go pkg/color/color.go pkg/core/types.go pkg/meshes/plane.go pkg/meshes/cube.go pkg/meshes/cylinder_test.go pkg/meshes/cylinder.go pkg/meshes/sphere_test.go pkg/meshes/plane_test.go pkg/meshes/cube_test.go pkg/meshes/sphere.go pkg/physics/kinematics.go pkg/entity/entity_test.go pkg/entity/entity.go pkg/material/material_test.go pkg/material/material.go pkg/lighting/pointlight.go pkg/lighting/lighting.go pkg/lighting/lighting_test.go pkg/scene/scene.go pkg/scene/scene_test.go pkg/shaders/shaders_test.go pkg/shaders/shaders.go pkg/entities/helpers.go pkg/entities/group.go pkg/entities/group_test.go pkg/ray/intersections.go pkg/ray/intersection_test.go pkg/ray/ray_test.go pkg/ray/intersection.go pkg/ray/ray.go pkg/canvas/canvas.go pkg/canvas/canvas_test.go pkg/component/component.go pkg/math/quaternion.go pkg/math/viewtransform_test.go pkg/math/types.go pkg/math/quaternion_test.go pkg/math/transform.go pkg/math/matrix.go pkg/math/transform_test.go pkg/math/matrix_test.go
+# automatic
+# ? := cmd/chapter10/main.go pkg/materials/helpers.go pkg/utils/utils.go pkg/camera/camera_test.go pkg/camera/camera.go pkg/camera/deprecated_camera.go pkg/color/color_test.go pkg/color/color.go pkg/core/types.go pkg/meshes/plane.go pkg/meshes/cube.go pkg/meshes/cylinder_test.go pkg/meshes/cylinder.go pkg/meshes/sphere_test.go pkg/meshes/plane_test.go pkg/meshes/cube_test.go pkg/meshes/sphere.go pkg/physics/kinematics.go pkg/entity/entity_test.go pkg/entity/entity.go pkg/material/material_test.go pkg/material/material.go pkg/lighting/pointlight.go pkg/lighting/lighting.go pkg/lighting/lighting_test.go pkg/scene/scene.go pkg/scene/scene_test.go pkg/shaders/shaders_test.go pkg/shaders/shaders.go pkg/entities/helpers.go pkg/entities/group.go pkg/entities/group_test.go pkg/ray/intersections.go pkg/ray/intersection_test.go pkg/ray/ray_test.go pkg/ray/intersection.go pkg/ray/ray.go pkg/canvas/canvas.go pkg/canvas/canvas_test.go pkg/component/component.go pkg/math/quaternion.go pkg/math/viewtransform_test.go pkg/math/types.go pkg/math/quaternion_test.go pkg/math/transform.go pkg/math/matrix.go pkg/math/transform_test.go pkg/math/matrix_test.go
+# automatic
+ 
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  recipe to execute (from 'Makefile', line 11):
+	go build -o $@ $<
+
+# Not a target:
+pkg/meshes/cube.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-04 12:29:00.256096911
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+cmd/chapter10/main.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.651351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/chapter9:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+# Not a target:
+bin/chapter13:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pkg/core/types.go:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-30 13:04:31.536805749
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/material/material.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-06 11:39:59.135097285
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ 
+pkg/scene/scene_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-13 19:02:14.092878391
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/math/matrix_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/chapter2:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pkg/shaders/shaders_test.go:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/canvas/canvas.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-02 17:15:18.016859697
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/ray/ray.go:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-13 19:08:28.202453494
+#  File has been updated.
+#  Successfully updated.
+ 
+
+# Not a target:
+pkg/material/material_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-29 17:09:09.73546661
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/entity/entity_test.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/ui:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pkg/lighting/lighting_test.go:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/chapter11-reflection:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: clean test run build
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pkg/utils/utils.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-02 18:49:02.681351307
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/chapter8-multilight:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# Not a target:
+bin/chapter6:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pkg/lighting/lighting.go:
+#  Implicit rule search has been done.
+#  Last modified 2021-08-29 17:09:09.73546661
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+pkg/entity/entity.go:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-13 19:03:03.586157491
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/chapter11-refraction:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=72/1024=7%, Rehash=0, Collisions=2/199=1%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 172 / storage = 2599 B / avg = 15 B
+# current buf: size = 8162 B / used = 2599 B / count = 172 / avg = 15 B
+
+# strcache performance: lookups = 311 / hit rate = 44%
+# hash-table stats:
+# Load=172/8192=2%, Rehash=0, Collisions=0/311=0%
+# Finished Make data base on Mon Jun 13 20:26:35 2022
+
+ 
