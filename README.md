@@ -12,7 +12,7 @@ This is a monorepo for all my programming practice projects. 
 - [2012 Camgames hackathon](./Events/2012-01-Camgames-Hackday/)
 
 ## Books
-| | | | 
+| | Click on book | | 
 | :---: | :---: | :---: |
 | [![](./img/ray-tracer-challenge.png)](./Books/The-Ray-Tracer-Challenge/) | [![](./img/SICP.png) ](./Books/SICP/) | [![](./img/The-Nature-of-Code.png)](./Books/Nature-Of-Code/) |
 | [![](./img/The_C_Programming_Language.png)](./Books/The-C-Programming-Language/) | [![](./img/Understanding-Computation.png)](./Books/Understanding-Computation/) | [![](./img/TECS.png)](./Books/The-Elements-of-Computing-Systems/) |
