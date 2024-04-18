@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="Client/static/welcome.less" rel="stylesheet/less" type="text/css" /> 
+  <script src="Client/js/Third-Party/less-1.3.0.min.js"></script>
+  <script src="Client/js/Third-Party/jquery-1.7.2.min.js"></script>
+  <script src="Client/js/Third-Party/soundmanager2/soundmanager2.js"></script>
+  
+  <script src="game.js"></script>
+  <title>Less</title>
+
+</head>
+<body>
+
+  <div id="main"></div>
+  <script>
+  $(function(){
+    //soundManager.useFastPolling = true;
+    soundManager.setup({
+      url: 'Client/js/Third-Party/soundmanager2/swf',
+      useHighPerformance:true,
+      flashVersion: 9,
+      ontimeout: function(){ console.log("Sound manager failed to load."); },
+      onready: function(){
+        window.sound = soundManager.createSound({
+          id : "try",
+          url: 'Client/resources/short-news-jingle.mp3',
+          autoLoad:true,
+          autoPlay: false,
+          multishot:false,
+          volume:50,
+          loops:1,
+          onload:function(){
+            console.log("Sound manager loaded sound successfully.");
+          },
+        });
+        //soundManager.play("try")
+      }
+    });
+
+    var scene = new Scene(
+      $("#main"),
+      {
+        base:"Client/resources/scene-bg.png", 
+        items: [
+          {
+            id: "trash",
+            offset: {x:180, y:160},
+            img: "Client/resources/trash.png",
+            size: {x:100, y:110}
+          },
+          {
+            id: "hammer",
+            offset: {x:120, y:180},
+            img: "Client/resources/hammer.png",
+            size: {x:80, y:80},
+          },
+          {
+            id: "flowers",
+            offset: {x:450, y:0},
+            img: "Client/resources/flowers.png",
+            size: {x:60, y:90},
+          },
+          {
+            id : "trophy",
+            offset: {x:370, y:25},
+            img: "Client/resources/trophy.png",
+            size: {x:64, y:64},
+          },
+          {
+            id: "potato", 
+            offset: {x:460, y:140},
+            img: "Client/resources/potato.png",
+            size: {x: 60, y:40},
+          },
+          {
+            id: "typewriter",
+            offset: {x:360, y:105},
+            img: "Client/resources/typewriter.png",
+            size: {x:100, y:80},
+          },
+          {
+            id: "clothing", 
+            offset: {x:0, y:0},
+            img: "Client/resources/clothing.png",
+            size: {x:80, y:280},
+          },
+          {
+            id: "ring",
+            offset: {x:230,y:50},
+            img: "Client/resources/ring.png",
+            size: {x:32, y:32},
+          },
+          {
+            id: "books",
+            offset: {x:270, y:97},
+            img: "Client/resources/books.png",
+            size: {x:85, y:85},
+          },
+          {
+            id: "wrecking", 
+            offset: {x:512, y:200},
+            img: "Client/resources/wrecking.png",
+            size: {x:100, y:100},
+          },
+          {
+            id: "bed", 
+            offset: {x:0, y:300},
+            img: "Client/resources/bed.png",
+            size: {x:600, y:100},
+          },
+          {
+            id: "handcuffs",
+            offset: {x:450, y:330},
+            img: "Client/resources/handcuffs.png",
+            size: {x:64, y:64},
+          },
+        ],
+        verses: [
+          {
+            verse:"From this room I need<br/>To extract and erase trash.<br/>Delete an item.",
+            items: {
+              "flowers": { score: -1, feedback: "Who cares for this sentimental crap anyway?"},
+              "ring": { score: -2, feedback: "Who cares for this sentimental crap anyway?"},
+              "potato": { score: 0, feedback: "Well, that looks much cleaner now."},
+              "trash": { score: 0, feedback: "Well, that looks much cleaner now."},
+              "wrecking": { score: -1, feedback: "I never understood your attachment to that toy." },
+            }
+          },
+          {
+            verse:"I gave this to you.<br/>So busy, you have had no<br/>Time to enjoy it.",
+            items: {
+              "books": {score: 0, feedback: "I suppose it's the thought that counts."},
+              "flowers": {score: 1, feedback: "I made sure to send you a bouquet at work."},
+              "clothing": {score: -1, feedback: "And you never seemed to like what I did to you when you wore it."},
+              "handcuffs": {score: -1, feedback: "And you never seemed to like what I did to you when you wore it."},
+              "potato": {score: -1, feedback: "You looked so disappointed when I told you it wasn't a joke."},
+              "trash": {score: -1, feedback: "You looked so disappointed when I told you it wasn't a joke."},
+              "ring": {score: -1, feedback: "It was \"too soon,\" you said."},
+              "typewriter": {score: 1, feedback: "You'll have more time when you're back from your book-signing."},
+              "trophy": {score: 1, feedback: "You won my heart."},
+              "wrecking":{score:-1, feedback:"I said it was symbolic of what you were doing to our relationship."},
+              "hammer":{score:-1, feedback:"I suppose it is an odd present."},
+            }
+          },
+          {
+            verse:"At everything you<br/>Tried your hand, excellence<br/>is what you achieved.",
+            items: {
+              "handcuffs": {score:-1, feedback: "But you never enjoyed it as much as me."},
+              "potato": {score:1, feedback: "I could never match your skill in the kitchen."},
+              "trophy": {score:1, feedback: "I was so proud when you won an award for your writing."},
+              "hammer": {score:1, feedback: "I always came to you for help with DIY."},
+              "typewriter": {score:1, feedback: "Every story you wrote was special to me."},
+              "books": {score: 1, feedback: "Every story you wrote was special to me."},
+              "clothing": {score:-1, feedback: "Nobody can give a strip-tease quite like you."},
+              "trash": {score:-1, feedback: "Next to you, I'm trash."},
+              "ring": {score:-1, feedback:"You were so skilled at cheating people out of jewelry."},
+              "wrecking": {score:-1, feedback:"You were especially skilled at wrecking my friendships."},
+            }
+          },
+          {
+            verse: "The first time we met,<br/>You were my waitress in that<br/>Tiny restaurant.",
+            items: {
+              "flowers":{score:1, feedback:"You wore a delicate flower in your hair."},
+              "clothing":{score:-1, feedback:"I couldn't wait to tear those clothes off you."},
+              "potato":{score:1, feedback:"You served me a potato salad I still have dreams about."},
+              "ring":{score:1, feedback:"It took all my effort not to propose there and then."},
+              "trash":{score:-1, feedback:"Your food was trash, but I ate it anyway."},
+              "trophy":{score:1, feedback:"There was no doubt you were also the best cook in that establishment."},
+              "wrecking":{score:-1, feedback:"It wrecked my relationship when my girlfriend caught me looking at you."},
+              "handcuffs":{score:-1, feedback:"I thought about using my handcuffs to capture and keep you."},
+              "hammer":{score:-1, feedback:"I wanted to knock you out and drag you home."},
+            }
+          },
+          {
+            verse: "I knew I had to<br/>Get your telephone number<br/>Immediately.",
+            items:{
+              "clothing":{score:1, feedback:"I will never forget how beautiful you looked on our first date."},
+              "trash":{score:-1, feedback:"You tried to give me a fake number, but I saw through that."},
+              "flowers":{score:1, feedback:"I brought you flowers on our first date."},
+              "ring":{score:-1, feedback:"I proposed to you over the phone, but you rejected me the first time."},
+              "potato":{score:-1, feedback:"If only to get you to cook for me again."},
+              "trophy":{score:-1, feedback:"I had to make you my trophy."},
+              "wrecking":{score:-1, feedback:"I wrecked our first date, but you were desperate."},
+              "books":{score:-1, feedback:"Our first date was like something out of a horror novel. For you."},
+              "handcuffs":{score:-1, feedback:"After our date, I took you back to mine and cuffed you to my bed."},
+              "hammer":{score:-1, feedback:"You wouldn't give it at first, but I threatened violence."},
+              "typewriter":{score:0, feedback:"You wrote it down for me in your neat, type-like handwriting."},
+            }
+          },
+          {
+            verse: "The day we became<br/>A married couple, forever<br/>Will remain perfect.",
+            items:{
+              "clothing":{score:1, feedback:"You looked so beautiful."},
+              "ring":{score:1, feedback:"I bought the most beautiful ring I could find."},
+              "wrecking":{score:1, feedback:"Nothing could have wrecked it."},
+              "flowers":{score:1, feedback:"I preserved the flower you wore in your hair."},
+              "trash":{score:-1, feedback:"I'm sorry I hit the bar and trash-talked your mother."},
+              "hammer":{score:-1, feedback:"I got hammered with your uncle at the bar and he gave me some tips about how you like it."},
+              "handcuffs":{score:-1, feedback:"\"Until death do we part.\""},
+              "potato":{score:-1, feedback:"The catering was <strong>that</strong> good!"},
+              "trophy":{score:-1, feedback:"Now you are my trophy."},
+              "books":{score:-1, feedback:"I secretly kept the wedding-night photo album you wanted me to burn."},
+              "typewriter":{score:-1, feedback:"I wrote what we got up to that night into a successful adult novel."},
+            }
+          }, 
+          {
+            verse: "Lately you became<br/>Anxious that we would lose what<br/>We both created.",
+            items:{
+              "wrecking":{score:-1, feedback:"I was wrecking everything."},
+              "flowers":{score:1, feedback:"I did my best to fix things with you."},
+              "hammer":{score:1, feedback:"We did our best to mend things."},
+              "handcuffs":{score:-1, feedback:"I just couldn't let you escape."},
+              "trophy":{score:0, feedback:"You could have won an award for being so insightful..."},
+              "potato":{score:-1, feedback:"You said I was becoming a couch potato."},
+              "ring":{score:-1, feedback:"You stopped wearing your ring."},
+              "trash":{score:-1, feedback:"Our relationship was turning into garbage."},
+              "books":{score:-1, feedback:"You said I was withdrawing into a fantasy world."},
+              "typewriter":{score:-1, feedback:"We started leaving notes for each other instead of talking."},
+            },
+          },
+        ],
+        start: "This is our story",
+        end: {
+          verse: "Here I'm restless.<br/>Here I may sleep no more.<br/>I must leave this place.",
+          item: "bed"
+        },
+        endings:[
+          {
+            text: "I am so happy.<br/>What a family we'll make<br/>With our new child.",
+            offset: {x:120, y:320},
+            img: "Client/resources/teddy.png",
+            smallsize: {x:70, y:80},
+            bigsize: {x:360, y:411},
+            goodending: 1
+          },
+          {
+            text: "With my promotion<br/>At work, we will move to a<br/>Bigger place to live.",
+            offset: {x:200, y:320},
+            img: "Client/resources/housekey.png",
+            smallsize: {x:64, y:64},
+            bigsize: {x:360, y:360},
+          },
+          {
+            text: "This room needed a<br/>Spring cleaning very much. I'm<br/>So glad I did that.",
+            offset: {x:250, y:330},
+            img: "Client/resources/vacuum.png",
+            smallsize: {x:148, y:70},
+            bigsize: {x:360, y:171},
+          },
+          {
+            text: "Without you, without<br/>My job, I don't know what<br/>Is going to happen.",
+            offset: {x:150, y:320},
+            img: "Client/resources/noose.png",
+            smallsize: {x:277, y:80},
+            bigsize: {x:360, y:104},
+          },
+          {
+            text: "I'm sorry. I am<br/>So sorry. I am sorry<br/>So <em>so</em> so sorry...",
+            offset: {x:150, y:320},
+            img: "Client/resources/knife2.png",
+            badending: 1,
+            smallsize: {x:64, y:64},
+            bigsize: {x:360, y:360},
+          },
+        ],
+        credits: 'Thank you for playing <em>Less</em>.<br /><br />You have just experienced one of five alternative endings, <a href="#" onclick="location.reload()">play again</a> to experience the others.<br /><br /><em>Less</em> was lovingly crafted by<br /> <a href="http://twitter.com/tccoxon">Tom Coxon</a><br /> and <a href="http://twitter.com/fractallambda">Brice Fernandes</a><br /><br /> '
+      }
+    );
+  });
+  
+  </script>
+
+
+</body>
+</html>
