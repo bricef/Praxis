@@ -1,6 +1,8 @@
 
-class GildedRose(object):
+def clamp(minimum, x, maximum):
+    return max(minimum, min(x, maximum))
 
+class GildedRose(object):
     def __init__(self, items):
         self.items = items
 
@@ -8,56 +10,73 @@ class GildedRose(object):
         for item in self.items:
             item.update()
 
-def update_aged_brie(item):
-    item.sell_in -= 1
-    if item.quality < 50:
-        item.quality = item.quality + 1
-        if item.sell_in < 0:
-            item.quality = item.quality + 1
+# class Item:
+#     def __init__(self, name, sell_in, quality):
+#         self.name = name
+#         self.sell_in = sell_in
+#         self.quality = quality
 
-def update_sulfuras(item):
-    pass
-
-def update_concert_ticket(item):
-    if item.quality < 50:
-        item.quality = item.quality + 1
-        if item.sell_in < 11:
-            item.quality = item.quality + 1
-        if item.sell_in < 6:
-            item.quality = item.quality + 1
-    item.quality = min(item.quality, 50)
-    item.sell_in -= 1
-    if item.sell_in < 0:
-        item.quality = 0
-
-def update_default(item):
-    if item.quality > 0:
-        item.quality = item.quality - 1
-    item.sell_in -= 1
-    if item.sell_in < 0:
-        if item.quality > 0:
-            item.quality = item.quality - 1
+#     def __repr__(self):
+#         return "%s, %s, %s" % (self.name, self.sell_in, self.quality)
 
 class Item:
-    def __init__(self, name, sell_in, quality):
+    def __init__(self, name, sell_in, quality, update_fn=None):
         self.name = name
         self.sell_in = sell_in
-        self.quality = quality
+        self.quality = max(0, quality)
+        self.update_fn = update_fn
+
+    def decay(self):
+        self.quality -= 1
+
+    def _default_update(self):
+        if self.quality > 0:
+            self.decay()
+
+        self.sell_in -= 1
+
+        if self.sell_in < 0:
+            self.decay()
+
+        self.quality = clamp( 0, self.quality, 50)
 
     def update(self):
-        item = self
-        match item.name:
-            case "Aged Brie":
-                update_aged_brie(self)
-
-            case "Sulfuras, Hand of Ragnaros":
-                update_sulfuras(self)
-
-            case "Backstage passes to a TAFKAL80ETC concert":
-                update_concert_ticket(self)
-                 
-            case _:
-                update_default(item)
-
+        if self.update_fn:
+            self.update_fn(self)
+        else:
+            self._default_update()
+        
     def __repr__(self):
         return "%s, %s, %s" % (self.name, self.sell_in, self.quality)
+
+class Ticket(Item):
+    def update(self):
+        if self.quality < 50:
+            self.quality = self.quality + 1
+            if self.sell_in < 11:
+                self.quality = self.quality + 1
+            if self.sell_in < 6:
+                self.quality = self.quality + 1
+        self.quality = min(self.quality, 50)
+        self.sell_in -= 1
+        if self.sell_in < 0:
+            self.quality = 0
+
+class Legendary(Item):
+    def __init__(self, name, sell_in=0):
+        super().__init__(name=name, sell_in=sell_in, quality=80)
+
+    def update(self):
+        pass
+
+class Aging(Item):
+    def update(self):
+        self.sell_in -= 1
+        if self.quality < 50:
+            self.quality = self.quality + 1
+            if self.sell_in < 0:
+                self.quality = self.quality + 1
+
+class Conjured(Item):
+    def decay(self):
+        self.quality -= 2
