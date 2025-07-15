@@ -17,6 +17,16 @@ if __name__ == "__main__":
              Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
             ]
 
+    # days = 10
+    # results = []
+    # for day in range(days):
+    #     before = deepcopy(items)
+    #     GildedRose(items).update_quality()
+    #     after = deepcopy(items)
+    #     results.append({'before': before, 'after': after})
+    
+    # print(results)
+
     days = 2
     import sys
     if len(sys.argv) > 1:
