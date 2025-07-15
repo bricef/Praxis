@@ -1,13 +1,20 @@
 # Gilded Rose starting position in Python
 
-For exercise instructions see [top level README](../README.md)
+For exercise instructions see [INSTRUCTIONS.md](./INSTRUCTIONS.md)
 
-Suggestion: create a python virtual environment for this project. See the [documentation](https://docs.python.org/3/library/venv.html)
+
+## Setup
+
+Install the required dependencies
+
+```
+$ pip install -r requirements.txt
+```
 
 ## Run the unit tests from the Command-Line
 
 ```
-python test_gilded_rose.py
+$ python -m pytest .
 ```
 
 ## Run the TextTest fixture from the Command-Line
@@ -15,15 +22,14 @@ python test_gilded_rose.py
 For e.g. 10 days:
 
 ```
-python texttest_fixture.py 10
+$ python fixture.py 10
 ```
 
 You should make sure the command shown above works when you execute it in a terminal before trying to use TextTest (see below).
 
+## Run the fixture tests against a golden copy
 
-## Run the TextTest approval test that comes with this project
+```
+$ diff <(python fixture.py 10) GOLD_OUTPUT.txt
+```
 
-There are instructions in the [TextTest Readme](../texttests/README.md) for setting up TextTest. You will need to specify the Python executable and interpreter in [config.gr](../texttests/config.gr). Uncomment these lines:
-
-    executable:${TEXTTEST_HOME}/python/texttest_fixture.py
-    interpreter:python
