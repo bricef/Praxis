@@ -4,6 +4,8 @@ This is a monorepo for all my programming practice projects. 
 
 ## Katas and Exercises
 
+- [2025 Gilded Rose Architecture Kata](./2025-07-15-Gilded-Rose-Kata/)
+- [2025 Build With AI Event at Bletchley Park](./2025-Build-With-AI-Bletchley-Park/)
 - [2024 Mars Rover Kata at Cambridge Software Crafters](./Events/2024-04-16-Mars-Rover-Kata/)
 - [2023 Advent Of Code ](./Events/2023-Advent-Of-Code/)
 - [2014 NHS hackday](./Events/2014-nhshackday/)
