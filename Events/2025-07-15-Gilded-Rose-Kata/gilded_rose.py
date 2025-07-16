@@ -30,7 +30,7 @@ class Item:
         self.quality -= 1
 
     def _default_update(self):
-        if self.quality > 0:
+        if self.quality >= 0:
             self.decay()
 
         self.sell_in -= 1
@@ -70,12 +70,8 @@ class Legendary(Item):
         pass
 
 class Aging(Item):
-    def update(self):
-        self.sell_in -= 1
-        if self.quality < 50:
-            self.quality = self.quality + 1
-            if self.sell_in < 0:
-                self.quality = self.quality + 1
+    def decay(self):
+        self.quality +=1
 
 class Conjured(Item):
     def decay(self):
